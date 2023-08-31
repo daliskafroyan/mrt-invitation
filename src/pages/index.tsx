@@ -2,6 +2,7 @@ import Head from "next/head";
 import Container from "react-bootstrap/Container";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { Button } from "react-bootstrap";
 
 function ParagraphWrapper({children, number}: {children: React.ReactNode, number: number}) {
   return (
@@ -61,14 +62,28 @@ export default function Home() {
         <div className="container text-left">
           <div className="row">
             <div className="col">
-              <h3>Notice of Preliminary Screening Process</h3>
+              <h3 className="fw-bold" style={{color: '#43b54a'}}>Notice of Preliminary Screening Process</h3>
+            </div>
+            <div className="col">
+              <p style={{color: '#1a4f9a'}} className="fw-bold">
+                Contract Name: Contract Package CP205: Railway Systems and Track
+                Work
+              </p>
+            </div>
+            <div className="col">
+              <p style={{color: '#1a4f9a'}} className="fw-bold">JICA Loan No.: IP-578, IP-585 and subsequent JICA Loans</p>
+            </div>
+            <div className="col"></div>
+          </div>
+          <div className="row">
+            <div className="col">
               <ParagraphWrapper number={1}>
               <p>
                   The Government of the Republic of Indonesia, represented by
                   its Ministry of Finance, has received a loan from the Japan
                   International Cooperation Agency (JICA) towards the cost of
-                  Eighty-Seven Billion Nine Hundred Eighteen Million Japanese
-                  Yen (JPY87,918,000,000) and intends to apply part of the
+                  <strong> Eighty-Seven Billion Nine Hundred Eighteen Million Japanese
+                  Yen (JPY87,918,000,000)</strong> and intends to apply part of the
                   proceeds towards payments under the Contract Package CP205:
                   Railway Systems and Track Work.
                 </p>
@@ -81,7 +96,7 @@ export default function Home() {
                 Construction of Jakarta Mass Rapid Transit Project (Phase 2)
                 (I), as below:
               </p>
-              <p>
+              <p className="fst-italic">
                 Railway Systems for Bundaran HI to Kota, including Substation
                 System, Overhead Contact System, Power Distribution System,
                 Signaling System, Telecommunication System, Facility SCADA,
@@ -96,11 +111,6 @@ export default function Home() {
               </ParagraphWrapper>
             </div>
             <div className="col">
-            
-              <p>
-                Contract Name: Contract Package CP205: Railway Systems and Track
-                Work
-              </p>
               <ParagraphWrapper number={3}>
                 <p>
                 This procurement is for the re-bidding process following the
@@ -123,23 +133,22 @@ export default function Home() {
               <ParagraphWrapper number={5}>
               <p>
                 The preliminary screening process will be conducted before the
-                Invitation for Bids, from 1st September 2023 through 7th
-                September 2023. Interested applicants must submit the Letter of
+                Invitation for Bids, from <strong>1st September 2023 through 7th
+                September 2023.</strong> Interested applicants must submit the Letter of
                 Intent, associated forms and supporting documents under
-                Attachment-5 via email anytime from 1st September through 7th
-                September 2023. Invitation for Bids to the pre-screened
-                companies is expected to be issued on 8th September 2023, and
+                Attachment-5 via email anytime from <strong>1st September 2023 through 7th
+                September 2023.</strong> Invitation for Bids to the pre-screened
+                companies is expected to be issued on <strong>8th September 2023,</strong> and
                 the pre-screened applicants will be invited to collect the
-                bidding documents between 11th September 2023 and 13th September
-                2023. The deadline for the bid submission is 30th November 2023
-                at 5:00 pm Jakarta time.
+                bidding documents between <strong>11th September 2023 and 13th September
+                2023.</strong> The deadline for the bid submission is <strong>30th November 2023
+                at 5:00 pm Jakarta time.</strong>
               </p>
               </ParagraphWrapper>
               
               
             </div>
             <div className="col">
-              <p>JICA Loan No.: IP-578, IP-585 and subsequent JICA Loans</p>
               <p>Preliminary Screening Process Requirements</p>
               <ParagraphWrapper number={6}>
               <p>
@@ -178,10 +187,46 @@ export default function Home() {
                 among JV members (if applicable).
               </p>
             </div>
+            <div className="col">
+              <p>Attachment:</p>
+
+              <dl className="row">
+                <dt className="col">Attachment 1:</dt>
+                  <dd className="col-sm-7">Section V. Eligible Source Countriesof Japanese ODA Loans</dd>
+
+                  <dt className="col">Attachment 2:</dt>
+                  <dd className="col-sm-7">Compliance Requirements for Eligibility and Qualification Criteria</dd>
+
+                  <dt className="col">Attachment 3:</dt>
+                  <dd className="col-sm-7">The Letter of Intent on Bidding Preparation</dd>
+
+                  <dt className="col">Attachment 4:</dt>
+                  <dd className="col-sm-7">Sufficiency of Compliance 
+                          Requirements for Eligibility and 
+                          Qualification Criteria Checklist: 
+                          (Preliminary Screening Process for 
+                          Procurement of CP205: Railway 
+                          Systems and Track Work of 
+                          Construction of Jakarta Mass Rapid 
+                          Transit Project (Phase 2) (I))
+                  </dd>
+
+                  <dt className="col">Attachment 5:</dt>
+                  <dd className="col-sm-7">Forms for Sufficiency of Compliance 
+                          Requirements for Eligibility and 
+                          Qualification Criteria Checklist
+                  </dd>
+              </dl>
+            </div>
+          </div>
+          <div className="row">
+            <div className="d-flex justify-content-end">
+              <Button variant="primary" href="https://forms.office.com/r/aLJ1ac35E0">Click here to continue</Button>
+            </div>
           </div>
         </div>
 
-        <hr className="col-1 my-5 mx-0" />
+        <hr className="col-1 my-5 mx-0" style={{color: '#fff'}} />
       </Container>
       <Footer />
     </>
